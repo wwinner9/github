@@ -1,30 +1,54 @@
-import Link from 'next/link'
+import Link from 'next/link' 
 
 import { useState } from 'react'
-import axios from 'axios'
+import api from '../services/ApiCall'
 
 import styles from '../styles/pages/Login.module.css'
 
-export default function Login(){
+export default function Login({history}){
 
     //Create a new state that will store the username 
-    const [username,setUsername] =useState([])
+    const [username,setUsername] =useState('')
 
     //Function that will be handled when user submit
-    async function handleSubmit(e) {
+    function handleSubmit(e) {
 
         //Prevent the default page behavor
         e.preventDefault();
 
+        //Change the buttom appearence
         e.target.textContent='signing in...'
-        e.target.style.background='#83e09d'
+        e.target.style.background='#83e09d'  
+        
+        
 
-        const resp = await axios.get(`https://api.github.com/users/${username}`)
-
-
-        console.log(resp)
+        validateForm()
+       
     }
 
+    async function validateForm(){
+        
+        if(!username){
+            console.log('Missing Params')
+            
+        } else{
+
+            try {
+                //Api called at folder services , it has axios config 
+                const resp = await api(`/users/${username}`)
+    
+                if(resp.status===200){
+                    console.log(resp.data)
+                }else if(resp.status===404){
+                    console.log('not found')
+                }
+    
+            } catch (error) {
+                throw error ;
+            }
+
+        }
+    }
 
     return (
         <div className={styles.loginContainer}>
@@ -50,9 +74,10 @@ export default function Login(){
                 <button 
                     type="submit"  
                     onClick={handleSubmit}                                 
-                >
+                >                   
                     Sign in
                 </button> 
+                
             </form>
             <div className={styles.createAccount}>
                 <p>New to GitHub? <a href="#">Create an account</a></p>
