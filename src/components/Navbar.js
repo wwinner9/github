@@ -3,7 +3,11 @@ import styles from '../styles/components/Navbar.module.css'
 import {FiBell, FiPlus} from 'react-icons/fi'
 import {FaSortDown} from 'react-icons/fa'
 
+
+import Floatmenuavatar, { FloatPlus } from './Floatmenuavatar'
+
 export default function Navbar(){
+
 
     return ( 
         <div className={styles.NavbarContainer}>
@@ -26,13 +30,28 @@ export default function Navbar(){
                 <div className={styles.rightSideBar}>
                     <ul>
                         <li><a href=""><FiBell size={18} color='#fff'/></a></li> 
-                        <li>                             
+                        <li 
+                            onMouseEnter={e=>document.querySelector('[data-hide2]').style.display='block'} 
+                            onMouseLeave={e=>document.querySelector('[data-hide2]').style.display='none'}
+                        >                             
                             <FiPlus color='#fff' size={18}/>
                             <a><FaSortDown size={14} color='white'/> </a>
+                            <div className={styles.floatMenuAvata} data-hide2 >
+                                <FloatPlus/>
+                            </div>
                         </li>
-                        <li> 
-                            <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="avatar" className={styles.avatarBar} />    
-                            <a><FaSortDown size={14} color='white'/></a>    
+
+                        <li 
+                            onMouseEnter={e=>document.querySelector('[data-hide]').style.display='block'} 
+                            onMouseLeave={e=>document.querySelector('[data-hide]').style.display='none'}
+                        >
+                                <div className={styles.userInfoAvatar} >                            
+                                    <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="avatar" className={styles.avatarBar} />    
+                                    <a><FaSortDown size={14} color='white'/></a>    
+                                </div> 
+                                <div className={styles.floatMenuAvata} data-hide >
+                                    <Floatmenuavatar/>
+                                </div>
                         </li>
                         
                     </ul>

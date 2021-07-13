@@ -1,0 +1,74 @@
+.Floatmenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 5px 0;
+    position: relative;
+    
+}
+
+
+.Floatmenu::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+ 
+    top: -10px;
+    right: 10px;
+
+    border-right:10px solid transparent ;
+    border-left:10px solid transparent ;
+    border-bottom:15px solid #fff ; 
+
+}
+
+
+
+.Floatmenu > p , .Floatmenu ul li a, .signOut a{
+    font-size: 14px;
+    color: #24292f;
+    line-height: 24px;   
+}
+
+.Floatmenu >p{
+    margin:0 15px 5px ;
+}
+
+.signOut a{
+    margin-left:5px ;
+}
+
+
+.focus{
+    display: flex;
+    
+    border: 1px solid #D0D7DE;
+    border-left:none;
+    border-right: none ;
+    height: 2rem;
+    width: 100%;
+    
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    
+}
+
+.Floatmenu ul{
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid #e5e7eb; 
+}
+
+.Floatmenu ul li{
+    font-size: .8rem;
+    margin-bottom: 2.5px; 
+}
+ 
+.signOut{
+    margin: 5px 10px;
+}

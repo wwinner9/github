@@ -1,0 +1,52 @@
+.exploreContainer{
+
+    border-bottom: 1px solid #d6d8db;
+    padding: 20px 0 8px;
+}
+
+.exploreContainer strong{
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.exploreContainer >p{
+    font-size: 12px;
+    color: #57606a;  
+}
+
+.bottomInfo{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.langInfo{
+    display: flex;
+    margin-right: 10px;
+}
+
+.langInfo p{
+    text-indent: 5px;
+    font-size: 12px;
+    color: #57606a;
+}
+
+
+
+.bottomInfo a:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.bottomInfo >p{
+    margin-left: 5px;
+    font-size: 12px;
+    color: #57606a;
+}
+
+.circle{
+    height: .7rem;
+    width: .7rem;
+    border-radius: 50%;
+    background-color: rgb(92, 92, 238); 
+}

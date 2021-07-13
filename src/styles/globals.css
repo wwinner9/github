@@ -6,6 +6,10 @@
 
 }
 
+body{
+  background-color: #f6f8fa;
+}
+
 body,html,button{
   font-family: Helvetica, sans-serif;
 }

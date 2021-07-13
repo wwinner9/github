@@ -25,11 +25,13 @@ export default function Home() {
             </ul>
           </div>
           <div className={styles.exploreMain}>
-            <p>All activity</p>
+            <p>Explore repositories</p>
             <ul>
-              <li>
-                <Explore/>
-              </li>
+              <li><Explore/></li>
+              <li><Explore/></li>
+              <li><Explore/></li>
+              <li><Explore/></li>
+              <li><Explore/></li>
             </ul>
           </div>
 
