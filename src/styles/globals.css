@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0; 
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+
+}
+
+body,html,button{
+  font-family: Helvetica, sans-serif;
+}
+
+a { 
+  text-decoration: none;
+  color: black;
+} 
+
+input{
+  outline: none;
+  border: none;
+}
+
+ul{ 
+  list-style: none;
+}
