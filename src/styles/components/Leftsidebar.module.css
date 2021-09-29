@@ -3,18 +3,19 @@
     flex-direction: column; 
     width: 100%; 
     height: 100vh;
-    padding: 3rem 2.5rem; 
+    padding: 2rem 2rem; 
     border-right: 1px solid #ccc9;
 }
 
 .firstHalf{
-    height: 50vh;
+    height: 40vh;
     border-bottom: 1px solid #ccc;
 }
 
 .topLeftSide .upTop{
     display: flex;
     justify-content: space-between; 
+    align-items: center;
 }
 
 .topLeftSide 
@@ -25,22 +26,82 @@
 }
 
 .upTop .btnNewRepo{
-    width: 4rem;
+    width: 4.2rem;
     height: 1.7rem;
     border-radius: 5px;
     border: none;
     background-color: #2DA44E;
     color: white;
     font-size: .79rem;
+    padding: 0 10px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    
+    margin-bottom: 10px;
 }
 
 
+.findRep input{
+    width: 100%;
+    height: 2rem;
+    border-radius: 5px;
+    text-indent: 10px;
+    margin-bottom: 17px;
+    background-color: #F6F8FA;
+    border: 1px solid #ccc9;
+}
+
+.mainRepo ul{
+    height: 100%; 
+}
+
 .mainRepo ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 15px;
     
 }
 
+.mainRepo  a,
+.secondHalf p
+{
+    font-size: 12px;
+    color: #57606A;
+}
+
+.mainRepo > a:hover{
+    color: #0969da;
+}
+
 .mainRepo ul li img{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
+    margin-right: 7px;
+}
+
+.mainRepo ul li a{
+    font-size: 14px;
+    color: #24292f;
+}
+
+.mainRepo ul li a:hover{
+    text-decoration:underline;
+}
+
+.secondHalf{
+    padding-top: 18px;
+}
+
+.secondHalf h4{
+    margin-bottom: 18px;
+}
+
+.secondHalf p{
+    line-height: 18px;
+
 }

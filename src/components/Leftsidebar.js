@@ -12,7 +12,7 @@ export default function Leftsidebar(){
                         <div className={styles.upTop}>                        
                             <h4>Repositories</h4>
                             <button className={styles.btnNewRepo} >
-                                <FiBookmark/>
+                                <p><FiBookmark/></p>
                                 New
                             </button>
                         </div>
@@ -29,7 +29,27 @@ export default function Leftsidebar(){
                         <ul>
                             <li>
                                 <img src="imgg.png" alt="user Avatar"/>
-                                <a href="">wwinner/incicle</a>
+                                <a href="">wwinner / incicle</a>
+                            </li> 
+                            <li>
+                                <img src="imgg.png" alt="user Avatar"/>
+                                <a href="">wwinner9 / DataBase</a>
+                            </li> 
+                            <li>
+                                <img src="imgg.png" alt="user Avatar"/>
+                                <a href="">wwinner / Gitincicle</a>
+                            </li> 
+                            <li>
+                                <img src="imgg.png" alt="user Avatar"/>
+                                <a href="">wwinner / Facebook-Clone</a>
+                            </li> 
+                            <li>
+                                <img src="imgg.png" alt="user Avatar"/>
+                                <a href="">wwinner / Instagram</a>
+                            </li> 
+                            <li>
+                                <img src="imgg.png" alt="user Avatar"/>
+                                <a href="">wwinner / Banking-Hack</a>
                             </li> 
                         </ul>
                         <a href="">Show more</a>

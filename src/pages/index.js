@@ -2,6 +2,8 @@ import styles from '../styles/pages/Home.module.css'
 
 import Navbar from '../components/Navbar'
 import Leftsidebar from '../components/Leftsidebar'
+import Activity from '../components/Activity'
+import Explore from '../components/Explore'
 
 export default function Home() {
   return ( 
@@ -12,7 +14,25 @@ export default function Home() {
           <Leftsidebar/>
         </aside>
         <main className={styles.middle}>
-          <h1>ola</h1>
+          <div className={styles.activityMain}>
+            <p>All activity</p>
+            <ul>
+              <li><Activity/></li> 
+              <li><Activity/></li> 
+              <li><Activity/></li> 
+              <li><Activity/></li> 
+              <li><Activity/></li>  
+            </ul>
+          </div>
+          <div className={styles.exploreMain}>
+            <p>All activity</p>
+            <ul>
+              <li>
+                <Explore/>
+              </li>
+            </ul>
+          </div>
+
         </main>
       </div>
       

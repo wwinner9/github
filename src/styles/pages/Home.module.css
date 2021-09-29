@@ -1,13 +1,41 @@
+.aside{
+  width: 21.9rem; 
+}
+
 .mainContainer{
   width: 100%;
   display: flex;
 }
 
-.aside{
-  width: 21.9rem; 
-}
 
 .middle{
   width: 78%; 
   background-color: #f6f8fa;
+  
+  display: flex;
+}
+
+.activityMain{
+  width: 67%; 
+  margin-right: 2rem;
+  padding: 2rem ;  
+}
+
+.activityMain ul{
+  margin-top: 25px;
+  width: 100%;
+  height: 100vh; 
+}
+
+.activityMain ul li{
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #c7c8c9;
+
+  padding-bottom: 20px;
+}
+
+.exploreMain{
+  width: 27%; 
+  padding: 2rem 0 ;
 }
