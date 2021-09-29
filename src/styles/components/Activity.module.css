@@ -1,5 +1,6 @@
 .activityContainer{ 
     width: 100%;
+    position: relative;
 }
 
 .postInfo{
@@ -39,7 +40,7 @@
     border: 1px solid rgba(177, 172, 172, 0.308);
 }
 
-.activityContent >p{
+.activityContent > p{
     color: #57606a;
     font-size: 14px;
 }
