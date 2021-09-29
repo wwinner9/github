@@ -1,0 +1,120 @@
+.NavbarContainer{
+    background-color: #24292F;
+}
+.NavbarContainer header{
+    display: flex;
+    height: 3.9rem;
+    width: 100%;
+    padding: .8rem 1.8rem;
+}
+
+.NavbarContainer header .leftSideBar { 
+    display: flex; 
+    width: 100%;
+
+}
+
+.NavbarContainer header .leftSideBar img{
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #24292F;
+    
+}
+
+.NavbarContainer header .leftSideBar nav ul{ 
+    display: flex; 
+    
+}
+
+.NavbarContainer .leftSideBar .searchArea , .menus{
+    margin-top: 7px;
+    margin-left:13px ;
+}
+
+.NavbarContainer .leftSideBar .searchArea { 
+    height: 1.8rem;
+    width: 35%;
+    background-color: inherit;
+    padding: 4px 5px 4px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavbarContainer .leftSideBar .searchArea , .searchArea >a{
+
+    border: solid #adadad88;
+    border-width: thin;
+    border-radius: 4px;
+    
+}
+
+.searchArea >a{ 
+    padding: 0 8px ;
+    font-size: .8rem;
+    color: #adadad;
+}
+
+.NavbarContainer .leftSideBar .searchArea input{ 
+    background-color: inherit;
+    font-size:.93rem ;
+}
+
+.NavbarContainer .leftSideBar .searchArea input::placeholder{ 
+    color: #cfcfcf;
+    font-weight: 500;
+}
+
+.NavbarContainer .leftSideBar .menus{
+    padding-top: 6px;
+}
+
+.NavbarContainer .leftSideBar .menus li{
+    margin-right: 15px;
+}
+
+.NavbarContainer .leftSideBar .menus li a{ 
+    color: #f0f0f0;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.NavbarContainer .leftSideBar .menus li a:hover{ 
+    color: #9c9c9c; 
+}
+
+.NavbarContainer .rightSideBar {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+         
+}
+
+
+.NavbarContainer .rightSideBar ul{
+    display: flex; 
+    margin-top: 10px;
+    
+}
+
+.NavbarContainer .rightSideBar ul li{
+    display: flex;
+    margin-left: 15px;
+    flex: 1;
+
+    cursor: pointer;
+}
+
+.NavbarContainer .rightSideBar li :hover{ 
+    color: #9c9c9c; 
+}
+
+.NavbarContainer .rightSideBar .avatarBar{
+    width: 1.4rem;
+    height: 1.4rem;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+ 

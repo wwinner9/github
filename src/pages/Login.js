@@ -1,11 +1,16 @@
-import Link from 'next/link' 
+import {useRouter}  from 'next/router' 
 
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import api from '../services/ApiCall'
 
 import styles from '../styles/pages/Login.module.css'
 
+
+
 export default function Login({history}){
+
+    //Next Router Call
+    const router = useRouter();
 
     //Create a new state that will store the username 
     const [username,setUsername] =useState('')
@@ -15,19 +20,18 @@ export default function Login({history}){
 
         //Prevent the default page behavor
         e.preventDefault();
+        const el = e.target
 
         //Change the buttom appearence
-        e.target.textContent='signing in...'
-        e.target.style.background='#83e09d'  
+        el.textContent='signing in...'
+        el.style.background='#83e09d'  
         
-        
-
         validateForm()
        
     }
 
-    async function validateForm(){
-        
+    async function validateForm(){ 
+
         if(!username){
             console.log('Missing Params')
             
@@ -38,7 +42,11 @@ export default function Login({history}){
                 const resp = await api(`/users/${username}`)
     
                 if(resp.status===200){
+
+                    //Calling Home '/' page 
+                    router.push('/')
                     console.log(resp.data)
+
                 }else if(resp.status===404){
                     console.log('not found')
                 }
@@ -47,7 +55,8 @@ export default function Login({history}){
                 throw error ;
             }
 
-        }
+        } 
+        
     }
 
     return (
@@ -69,14 +78,15 @@ export default function Login({history}){
                 />
 
                 <label htmlFor="password">Password <a href="#">Forgot password?</a> </label>
-                <input type="password" name="password" id="password" />
+                <input type="password" name="password" id="password" /> 
 
+                
                 <button 
                     type="submit"  
                     onClick={handleSubmit}                                 
                 >                   
                     Sign in
-                </button> 
+                </button>  
                 
             </form>
             <div className={styles.createAccount}>
