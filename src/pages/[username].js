@@ -2,7 +2,10 @@ import Navbar from "../components/Navbar";
 
 import styles from '../styles/pages/profile.module.css'
 
-import {FiFeather} from 'react-icons/fi'
+import {FiBook, FiBookOpen, FiFeather, FiPackage, FiStar, FiUsers} from 'react-icons/fi'
+import {GoLocation} from 'react-icons/go'
+import {AiOutlineMail, AiOutlineProject} from 'react-icons/ai'
+import {BiBuildingHouse} from 'react-icons/bi'
 
 
 export default function username(){
@@ -12,10 +15,10 @@ export default function username(){
             <article>
                 <nav>
                     <ul>
-                        <li><FiFeather/><a href="#">Overview</a></li>
-                        <li><FiFeather/><a href="#">Repositories</a></li>
-                        <li><FiFeather/><a href="#">Projects</a></li>
-                        <li><FiFeather/><a href="#">Packages</a></li>
+                        <li><FiBookOpen/><a href="#">Overview</a></li>
+                        <li><FiBook/><a href="#">Repositories</a></li>
+                        <li><AiOutlineProject/><a href="#">Projects</a></li>
+                        <li><FiPackage/><a href="#">Packages</a></li>
                     </ul>
                     <div />
                 </nav>
@@ -33,14 +36,14 @@ export default function username(){
                         <p id={styles.bios}>Learn + than ate Begining </p>
                         <button type='button' id={styles.btnEdit} >Edit profile</button>
                         <div className={styles.socialInfo}>
-                            <p><FiFeather/><strong>2</strong>Followers</p>
+                            <p><FiUsers/><strong>2</strong>Followers</p>
                             <p><strong>15</strong>Following</p>
-                            <p><FiFeather/><strong> 28</strong></p>
+                            <p><FiStar/><strong> 28</strong></p>
                         </div>
                         <div className={styles.userMoreInfo}>                            
-                            <p><FiFeather/>Freelancer</p>
-                            <p><FiFeather/>Angola</p>
-                            <p><FiFeather/>fernandowwinner.97@gmail.com</p> 
+                            <p><BiBuildingHouse/>Freelancer</p>
+                            <p><GoLocation/>Angola</p>
+                            <p><AiOutlineMail/>fernandowwinner.97@gmail.com</p> 
                         </div>
                     </div>
                 </aside>
