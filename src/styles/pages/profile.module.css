@@ -1,0 +1,136 @@
+.profileContainer{
+    background-color: white;
+}
+
+.profileContainer article nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2.5rem 0 1rem;
+}
+
+.profileContainer article nav ul li{
+    margin-right:1.8rem;
+    padding: 0 20px 0 10px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 400;
+    color: #737C85;
+}
+
+.profileContainer article nav ul li a{
+    margin-left: 4px; 
+    color: #5f676e;   
+}
+
+.profileContainer article nav ul li::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2.8px;
+    background-color: #fa917a;
+    bottom: -16px;    
+}
+
+.profileContainer article nav ul li:hover::before{
+    width: 100%; 
+}
+
+.profileContainer article nav >div{
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.profileContainer .midleContainer{
+    display: flex;
+    background-color: #ffff;
+
+}
+
+.profileContainer aside{
+    width: 20%; 
+    background-color: #ffff;
+
+}
+
+.profileContainer aside .leftSideProf {
+    position: absolute;
+    width: 16rem;
+    height: 100%; 
+    top: 6rem;
+    left: 2.6rem;
+    background-color: #ffff;
+}
+
+
+.profileContainer aside .leftSideProf >img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 1px solid yellow;
+    margin-bottom: 15px;
+}
+
+.profileContainer aside .leftSideProf > h2{
+    line-height: 40px;
+}
+
+.profileContainer aside .leftSideProf .userInfo p{
+    color: #AFB4B9;
+    font-size: 1.15rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.profileContainer aside .leftSideProf #bios{
+    font-size: 1rem;
+    line-height: 30px;
+    color: #35373a;
+}
+
+.profileContainer aside .leftSideProf #btnEdit {
+    width: 100%;
+    height: 1.8rem;
+    border-radius:5px ;
+    border: 1px solid #c7cbcf;
+    background-color: #F6F8FA;
+    color: #636a72;
+    font-size: .85rem;
+}
+
+.profileContainer aside .socialInfo{
+    display: flex;
+    margin-top: 10px;
+    line-height: 30px;
+    font-size: .85rem; 
+}
+
+.profileContainer aside .socialInfo p{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.profileContainer aside .socialInfo p strong {
+    margin: 0 4px;
+}
+
+.profileContainer aside .userMoreInfo > p{
+    display: flex;
+    align-items: center;    
+
+    text-indent: 10px;
+    line-height: 23px;
+    color: #515558;
+    font-size: .9rem;
+}

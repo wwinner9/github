@@ -5,9 +5,14 @@ import Leftsidebar from '../components/Leftsidebar'
 import Activity from '../components/Activity'
 import Explore from '../components/Explore'
 
+
+import store from '../store/index'
+import { Provider } from 'react-redux'
+
 export default function Home() {
   return ( 
     <>
+      <Provider store={store}>
       <Navbar/>
       <div className={styles.mainContainer}>
         <aside className={styles.aside}>
@@ -31,12 +36,13 @@ export default function Home() {
               <li><Explore/></li>
               <li><Explore/></li>
               <li><Explore/></li>
-              <li><Explore/></li>
+              <li><Explore/></li> 
             </ul>
           </div>
 
         </main>
       </div>
+      </Provider>
       
     </>
   )
